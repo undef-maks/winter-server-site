@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <title>Create & Valkyrien Skies — Моди Minecraft</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(ellipse at top, #0f172a 0%, #020617 70%);
+      color: #e5e7eb;
+      min-height: 100vh;
+    }
+    header {
+      padding: 80px 20px 60px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      background: linear-gradient(90deg, #38bdf8, #a78bfa, #f472b6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    header p {
+      margin-top: 16px;
+      color: #94a3b8;
+      max-width: 720px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .mods {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      padding: 0 24px 80px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .card {
+      background: rgba(15, 23, 42, 0.7);
+      border: 1px solid rgba(148, 163, 184, 0.15);
+      border-radius: 24px;
+      padding: 28px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+      backdrop-filter: blur(8px);
+      transition: transform .3s ease, box-shadow .3s ease;
+    }
+    .card:hover {
+      transform: translateY(-8px) scale(1.01);
+      box-shadow: 0 30px 60px rgba(0,0,0,0.6);
+    }
+    .card h2 {
+      font-size: 1.6rem;
+      margin-bottom: 12px;
+    }
+    .tag {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      margin-bottom: 12px;
+      background: rgba(56, 189, 248, 0.15);
+      color: #38bdf8;
+    }
+    .card p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: #cbd5f5;
+    }
+    .features {
+      margin-top: 16px;
+      list-style: none;
+    }
+    .features li {
+      margin-bottom: 8px;
+      padding-left: 18px;
+      position: relative;
+    }
+    .features li::before {
+      content: '✦';
+      position: absolute;
+      left: 0;
+      color: #a78bfa;
+    }
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: #64748b;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Create & Valkyrien Skies</h1>
+    <p>Два легендарних мода для Minecraft, які разом відкривають світ інженерії, механізмів і справжніх літаючих кораблів з фізикою.</p>
+  </header>
+
+  <section class="mods">
+    <div class="card">
+      <span class="tag">Automation & Engineering</span>
+      <h2>Create</h2>
+      <p>Мод, який дозволяє будувати складні механічні системи: шестерні, вали, конвеєри, крани та повноцінні заводи.</p>
+      <ul class="features">
+        <li>Реалістична механіка обертання</li>
+        <li>Кінетична енергія замість магії</li>
+        <li>Конвеєри, млини, дробарки</li>
+        <li>Круті візуальні анімації</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <span class="tag">Physics & Airships</span>
+      <h2>Valkyrien Skies</h2>
+      <p>Мод з повноцінною фізикою, який дозволяє створювати літаючі кораблі, станції та рухомі конструкції.</p>
+      <ul class="features">
+        <li>Фізика маси та інерції</li>
+        <li>Літаючі бази та дирижаблі</li>
+        <li>Гравітація та тяга</li>
+        <li>Сумісність з Create</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>Зроблено для фанатів Minecraft модів • Create + Valkyrien Skies</p>
+  </footer>
+</body>
+</html>
+
