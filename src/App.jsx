@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Container, Card, Title, Text, Stack, Button, List, Collapse, Group, MantineProvider } from '@mantine/core'
+import { Container, Card, Title, Text, Stack, Button, List, Collapse, Group, MantineProvider, CopyButton, Tooltip } from '@mantine/core'
 import { modsInfo } from './data/mods'
 import { librariesInfo } from './data/libraries'
 import './App.css'
@@ -67,6 +67,33 @@ export default function App() {
           >
             ⬇ Завантажити збірку
           </Button>
+
+          <Card withBorder radius="md" mb="xl" p="md" shadow="lg"
+            style={{ background: 'rgba(0, 77, 97, 0.6)', backdropFilter: 'blur(5px)', border: '2px solid #4dd0e1' }}>
+            <Group position="apart">
+              <Stack spacing={0}>
+                <Text size="xs" transform="uppercase" weight={700} c="winterBlue.2">IP Адреса сервера:</Text>
+                <Text size="xl" weight={800} c="white" style={{ letterSpacing: '1px' }}>
+                  34.147.195.1:25565
+                </Text>
+              </Stack>
+
+              <CopyButton value="34.147.195.1:25565" timeout={2000}>
+                {({ copied, copy }) => (
+                  <Tooltip label={copied ? 'Скопійовано!' : 'Копіювати IP'} withArrow position="right">
+                    <Button
+                      variant="light"
+                      color={copied ? 'teal' : 'winterBlue'}
+                      onClick={copy}
+                      size="sm"
+                    >
+                      {copied ? '✅ Скопійовано' : '📋 Копіювати'}
+                    </Button>
+                  </Tooltip>
+                )}
+              </CopyButton>
+            </Group>
+          </Card>
 
           <Card withBorder radius="md" mb="xl" p="lg" shadow="sm">
             <Title order={3} mb="sm" c="winterBlue.3">Інструкція встановлення</Title>
