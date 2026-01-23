@@ -74,7 +74,7 @@ export default function App() {
               <Stack spacing={0}>
                 <Text size="xs" transform="uppercase" weight={700} c="winterBlue.2">IP Адреса сервера:</Text>
                 <Text size="xl" weight={800} c="white" style={{ letterSpacing: '1px' }}>
-                  34.147.195.1:25565
+                  34.39.88.182:25565
                 </Text>
               </Stack>
 
