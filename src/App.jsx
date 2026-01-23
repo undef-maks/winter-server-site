@@ -78,7 +78,7 @@ export default function App() {
                 </Text>
               </Stack>
 
-              <CopyButton value="34.147.195.1:25565" timeout={2000}>
+              <CopyButton value="34.39.88.182:25565" timeout={2000}>
                 {({ copied, copy }) => (
                   <Tooltip label={copied ? 'Скопійовано!' : 'Копіювати IP'} withArrow position="right">
                     <Button
