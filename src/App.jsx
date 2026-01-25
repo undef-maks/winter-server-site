@@ -74,11 +74,11 @@ export default function App() {
               <Stack spacing={0}>
                 <Text size="xs" transform="uppercase" weight={700} c="winterBlue.2">IP Адреса сервера:</Text>
                 <Text size="xl" weight={800} c="white" style={{ letterSpacing: '1px' }}>
-                  34.39.88.182:25565
+                  35.234.157.245:25565
                 </Text>
               </Stack>
 
-              <CopyButton value="34.39.88.182:25565" timeout={2000}>
+              <CopyButton value="35.234.157.245:25565" timeout={2000}>
                 {({ copied, copy }) => (
                   <Tooltip label={copied ? 'Скопійовано!' : 'Копіювати IP'} withArrow position="right">
                     <Button
